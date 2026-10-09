@@ -7,3 +7,6 @@ node_modules/
 
 # Pastas fora do escopo deste repositório (histórico próprio ou não relacionadas)
 /PROTOCOLOS- SERVER/
+
+.vercel
+.env*
