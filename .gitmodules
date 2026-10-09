@@ -1,0 +1,6 @@
+[submodule "site"]
+	path = site
+	url = https://github.com/zztrevisan/hiperion-site.git
+[submodule "sistema"]
+	path = sistema
+	url = https://github.com/zztrevisan/PROTOCOLOS-SERVER.git

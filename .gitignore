@@ -1,0 +1,9 @@
+node_modules/
+.vercel
+.env
+.env.local
+.DS_Store
+*.log
+
+# Pastas fora do escopo deste repositório (histórico próprio ou não relacionadas)
+/PROTOCOLOS- SERVER/
