@@ -4,6 +4,7 @@
   "description": "Raiz de deploy: so existe para a Vercel instalar as dependencias da funcao api/sistema-entry.js (ponte para o submodulo sistema/). O site/ e o sistema/ tem seus proprios package.json.",
   "dependencies": {
     "express": "^5.2.1",
-    "qrcode": "^1.5.4"
+    "qrcode": "^1.5.4",
+    "@tursodatabase/serverless": "^1.4.0"
   }
 }
