@@ -1,24 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "builds": [
-    { "src": "site/package.json", "use": "@vercel/next" },
-    {
-      "src": "api/sistema-entry.js",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["sistema/public/index.html"] }
-    },
-    { "src": "sistema/public/**", "use": "@vercel/static" }
-  ],
-  "routes": [
-    {
-      "src": "/sistema/(.*\\.(?:js|css|png|jpg|jpeg|svg|ico|webp|woff2?))",
-      "dest": "/sistema/public/$1"
-    },
-    { "src": "/sistema", "dest": "/api/sistema-entry.js" },
-    { "src": "/sistema/(.*)", "dest": "/api/sistema-entry.js" }
-  ],
-  "crons": [
-    { "path": "/sistema/cron/alertas-vencimentos", "schedule": "0 11 * * *" }
-  ]
+  "builds": [{ "src": "site/package.json", "use": "@vercel/next" }]
 }
