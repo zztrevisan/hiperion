@@ -14,8 +14,8 @@ o trabalho do dia a dia.
 
 | Produto | O que é | Stack |
 | --- | --- | --- |
-| [HIPERION - Site](HIPERION%20-%20Site/) | Site institucional: apresentação do escritório, serviços, história e Insights, em três idiomas | Next.js, React, Three.js |
-| [HIPERION - Sistema](HIPERION%20-%20Sistema/) | Hiperion Protocolos: emissão, transporte, retirada e conferência de documentos, com QR Code e assinatura | Express, Turso, PWA offline |
+| [HIPERION - Site](https://github.com/zztrevisan/hiperion-site) | Site institucional: apresentação do escritório, serviços, história e Insights, em três idiomas | Next.js, React, Three.js |
+| [HIPERION - Sistema](https://github.com/zztrevisan/PROTOCOLOS-SERVER) | Hiperion Protocolos: emissão, transporte, retirada e conferência de documentos, com QR Code e assinatura | Express, Turso, PWA offline |
 
 ## Arquitetura
 
@@ -45,8 +45,8 @@ git submodule update --init --recursive
 Cada produto tem seu próprio `README.md` com instruções de execução local,
 variáveis de ambiente e documentação de domínio:
 
-- [HIPERION - Site/README.md](HIPERION%20-%20Site/README.md)
-- [HIPERION - Sistema/README.md](HIPERION%20-%20Sistema/README.md)
+- [HIPERION - Site/README.md](https://github.com/zztrevisan/hiperion-site#readme)
+- [HIPERION - Sistema/README.md](https://github.com/zztrevisan/PROTOCOLOS-SERVER#readme)
 
 ## Trabalhando nos submódulos
 
@@ -71,19 +71,23 @@ não colidem. Veja `HIPERION - Site/.env.example` e
 
 ## Documentação
 
-**HIPERION - Site**
-[Arquitetura](HIPERION%20-%20Site/docs/arquitetura/ARQUITETURA.md) ·
-[Design system](HIPERION%20-%20Site/docs/arquitetura/DESIGN-SYSTEM.md) ·
-[Glossário de domínio](HIPERION%20-%20Site/docs/CONTEXT.md) ·
-[Decisões de arquitetura](HIPERION%20-%20Site/docs/adr/)
+Os links abaixo apontam para o repositório de cada submódulo (não dá para
+navegar para dentro deles a partir daqui — do ponto de vista deste
+repositório raiz, cada pasta de produto é só uma referência de commit).
 
-**HIPERION - Sistema**
-[Arquitetura](HIPERION%20-%20Sistema/docs/arquitetura/ARQUITETURA.md) ·
-[Design system](HIPERION%20-%20Sistema/docs/arquitetura/DESIGN-SYSTEM.md) ·
-[Fluxos operacionais](HIPERION%20-%20Sistema/docs/arquitetura/FLUXOS.md) ·
-[Segurança](HIPERION%20-%20Sistema/docs/operacao/SEGURANCA.md) ·
-[Glossário de domínio](HIPERION%20-%20Sistema/docs/CONTEXT.md) ·
-[Decisões de arquitetura](HIPERION%20-%20Sistema/docs/adr/)
+**HIPERION - Site** ([repositório](https://github.com/zztrevisan/hiperion-site))
+[Arquitetura](https://github.com/zztrevisan/hiperion-site/blob/main/docs/arquitetura/ARQUITETURA.md) ·
+[Design system](https://github.com/zztrevisan/hiperion-site/blob/main/docs/arquitetura/DESIGN-SYSTEM.md) ·
+[Glossário de domínio](https://github.com/zztrevisan/hiperion-site/blob/main/docs/CONTEXT.md) ·
+[Decisões de arquitetura](https://github.com/zztrevisan/hiperion-site/tree/main/docs/adr)
+
+**HIPERION - Sistema** ([repositório](https://github.com/zztrevisan/PROTOCOLOS-SERVER))
+[Arquitetura](https://github.com/zztrevisan/PROTOCOLOS-SERVER/blob/main/docs/arquitetura/ARQUITETURA.md) ·
+[Design system](https://github.com/zztrevisan/PROTOCOLOS-SERVER/blob/main/docs/arquitetura/DESIGN-SYSTEM.md) ·
+[Fluxos operacionais](https://github.com/zztrevisan/PROTOCOLOS-SERVER/blob/main/docs/arquitetura/FLUXOS.md) ·
+[Segurança](https://github.com/zztrevisan/PROTOCOLOS-SERVER/blob/main/docs/operacao/SEGURANCA.md) ·
+[Glossário de domínio](https://github.com/zztrevisan/PROTOCOLOS-SERVER/blob/main/docs/CONTEXT.md) ·
+[Decisões de arquitetura](https://github.com/zztrevisan/PROTOCOLOS-SERVER/tree/main/docs/adr)
 
 **Desta raiz**
 [Decisões de arquitetura](docs/adr/) ·
