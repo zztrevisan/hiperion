@@ -1,5 +1,10 @@
 # Hiperion
 
+[![Site institucional](https://img.shields.io/badge/site-Next.js%2016-black?logo=nextdotjs)](https://www.hiperionassessoria.com.br)
+[![Hiperion Protocolos](https://img.shields.io/badge/protocolos-Express%205-black?logo=express)](https://hiperion-protocolos-teste.vercel.app)
+[![Deploy](https://img.shields.io/badge/deploy-Vercel-black?logo=vercel)](https://vercel.com)
+[![Banco](https://img.shields.io/badge/banco-Turso%20%2F%20SQLite-4ff8d2?logo=sqlite)](https://turso.tech)
+
 Ponto de montagem dos dois produtos digitais da Hiperion Assessoria Contábil,
 escritório de contabilidade fundado em 1969 em São Paulo. Este repositório
 não tem código-fonte próprio — só reúne os dois no mesmo lugar para facilitar
@@ -66,10 +71,23 @@ não colidem. Veja `HIPERION - Site/.env.example` e
 
 ## Documentação
 
-- [Decisões de arquitetura desta raiz](docs/adr/)
-- [Modelo de pedido de tarefa](docs/continuidade/TASK_PROMPT_TEMPLATE.md)
-- [Modelo de continuidade entre sessões](docs/continuidade/TASK_CONTINUITY_TEMPLATE.md)
-- [`AGENTS.md`](AGENTS.md) — ponto de entrada: onde cada pedido deve ser trabalhado
+**HIPERION - Site**
+[Arquitetura](HIPERION%20-%20Site/docs/arquitetura/ARQUITETURA.md) ·
+[Design system](HIPERION%20-%20Site/docs/arquitetura/DESIGN-SYSTEM.md) ·
+[Glossário de domínio](HIPERION%20-%20Site/docs/CONTEXT.md) ·
+[Decisões de arquitetura](HIPERION%20-%20Site/docs/adr/)
+
+**HIPERION - Sistema**
+[Arquitetura](HIPERION%20-%20Sistema/docs/arquitetura/ARQUITETURA.md) ·
+[Design system](HIPERION%20-%20Sistema/docs/arquitetura/DESIGN-SYSTEM.md) ·
+[Fluxos operacionais](HIPERION%20-%20Sistema/docs/arquitetura/FLUXOS.md) ·
+[Segurança](HIPERION%20-%20Sistema/docs/operacao/SEGURANCA.md) ·
+[Glossário de domínio](HIPERION%20-%20Sistema/docs/CONTEXT.md) ·
+[Decisões de arquitetura](HIPERION%20-%20Sistema/docs/adr/)
+
+**Desta raiz**
+[Decisões de arquitetura](docs/adr/) ·
+[`AGENTS.md`](AGENTS.md) (onde cada pedido deve ser trabalhado)
 
 ## Licença
 
