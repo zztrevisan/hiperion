@@ -1,5 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "builds": [{ "src": "site/package.json", "use": "@vercel/next" }]
+  "builds": [{ "src": "HIPERION - Site/package.json", "use": "@vercel/next" }]
 }

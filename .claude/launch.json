@@ -4,7 +4,7 @@
     {
       "name": "site-dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "site"],
+      "runtimeArgs": ["run", "dev", "--prefix", "HIPERION - Site"],
       "port": 3000
     }
   ]

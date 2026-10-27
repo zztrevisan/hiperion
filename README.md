@@ -1,24 +1,26 @@
 # Hiperion — site + sistema
 
-Repositório de deploy que une dois projetos independentes em um único domínio e
-projeto Vercel. Cada projeto mantém seu próprio histórico, repositório remoto e
-fluxo de trabalho — aqui eles só são combinados na hora de servir.
+Repositório de ponto de montagem: reúne dois projetos independentes no
+mesmo disco. Cada um mantém seu próprio histórico, repositório remoto,
+`vercel.json` e deploy Vercel — eles não compartilham domínio nem roteamento,
+só são servidos lado a lado. Ver `docs/adr/0001-monorepo-via-submodulos-com-deploy-independente.md`.
 
 ```text
-site/      site institucional (Next.js) — submódulo git, remoto próprio
-sistema/   Hiperion Protocolos (Express) — submódulo git, remoto próprio
-api/       ponte de deploy que expõe o `sistema` sob o prefixo "/sistema"
-vercel.json  roteamento: "/sistema*" vai para o Express, o resto cai no Next.js
+HIPERION - Site/      site institucional (Next.js) — submódulo git, remoto próprio
+HIPERION - Sistema/   Hiperion Protocolos (Express) — submódulo git, remoto próprio
+vercel.json              builda só HIPERION - Site/ (projeto Vercel "hiperion")
 ```
 
-## Como funciona o roteamento
+## Como os dois se conectam
 
-- Qualquer caminho fora de `/sistema` é servido pelo site em Next.js (`site/`).
-- `/sistema` e `/sistema/*` são servidos pela app Express de `sistema/server-turso.js`,
-  através de `api/sistema-entry.js`, que só remove o prefixo `/sistema` do `req.url`
-  antes de delegar — o código do submódulo `sistema` não é alterado.
-- Arquivos estáticos da PWA de protocolos (`sistema/public/**`) são servidos
-  diretamente pela Vercel sob `/sistema/<arquivo>`.
+- `HIPERION - Site/` é o que o `vercel.json` raiz builda, sob o projeto
+  Vercel `hiperion`.
+- `HIPERION - Sistema/` tem seu próprio `vercel.json` e seu próprio projeto
+  Vercel (`hiperion-protocolos-teste` em teste), buildado a partir do
+  repositório `PROTOCOLOS-SERVER` — não depende deste repositório raiz.
+- O site institucional linka direto para a URL do sistema em
+  `HIPERION - Site/components/portal/portalLinks.ts`, sem proxy e sem
+  prefixo compartilhado.
 
 ## Submódulos
 
@@ -31,15 +33,18 @@ git submodule update --init --recursive
 Cada submódulo é commitado e enviado para seu próprio remoto, como antes:
 
 ```bash
-cd site    && git push origin main   # ou cd sistema && git push origin main
+cd "HIPERION - Site"    && git push origin main
+cd "HIPERION - Sistema" && git push origin main
 ```
 
 O repositório raiz só precisa de um novo commit quando você quiser apontar para
-uma revisão mais recente de `site` ou `sistema` (`git add site` / `git add sistema`).
+uma revisão mais recente de `HIPERION - Site` — o deploy do sistema não
+depende deste repositório (`git add "HIPERION - Site"`).
 
 ## Variáveis de ambiente
 
 As duas apps usam `RESEND_API_KEY` com nomes iguais; se forem contas Resend
-diferentes, configure qual valor vale no projeto Vercel único. As demais
+diferentes, configure cada uma no seu próprio projeto Vercel. As demais
 variáveis (`CONTACT_FROM_EMAIL`, `EMAIL_FROM`, `TURSO_*`, `CRON_SECRET`, etc.)
-não colidem. Veja `site/.env.example` e `sistema/.env.example`.
+não colidem. Veja `HIPERION - Site/.env.example` e
+`HIPERION - Sistema/.env.example`.

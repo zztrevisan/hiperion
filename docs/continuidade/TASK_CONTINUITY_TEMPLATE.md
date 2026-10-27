@@ -10,7 +10,7 @@ se valer a pena guardar.
 
 ## Projeto e escopo
 
-Qual submódulo (`site/` ou `sistema/`) e qual área dele. Se cruzou os dois,
+Qual submódulo (`HIPERION - Site/` ou `HIPERION - Sistema/`) e qual área dele. Se cruzou os dois,
 diga isso também.
 
 ## O que foi pedido

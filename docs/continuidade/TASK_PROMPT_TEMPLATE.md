@@ -31,7 +31,7 @@ agente "aproveitar" para mexer em algo que você não pediu.
 
 Se a tarefa grava em banco de produção/teste real, mexe em credencial, ou
 lê/importa dado real de empresa — diga explicitamente. Por padrão, qualquer
-teste deve usar dado fictício isolado (ver `CLAUDE.md` de `sistema/`), então
+teste deve usar dado fictício isolado (ver `CLAUDE.md` de `HIPERION - Sistema/`), então
 "isso aqui precisa ir para o banco de verdade" é informação que muda como o
 agente trabalha, não só o que ele entrega no final.
 
