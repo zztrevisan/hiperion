@@ -79,7 +79,8 @@ repositório raiz, cada pasta de produto é só uma referência de commit).
 [Arquitetura](https://github.com/zztrevisan/hiperion-site/blob/main/docs/arquitetura/ARQUITETURA.md) ·
 [Design system](https://github.com/zztrevisan/hiperion-site/blob/main/docs/arquitetura/DESIGN-SYSTEM.md) ·
 [Glossário de domínio](https://github.com/zztrevisan/hiperion-site/blob/main/docs/CONTEXT.md) ·
-[Decisões de arquitetura](https://github.com/zztrevisan/hiperion-site/tree/main/docs/adr)
+[Decisões de arquitetura](https://github.com/zztrevisan/hiperion-site/tree/main/docs/adr) ·
+[PDFs de apresentação](https://github.com/zztrevisan/hiperion-site/tree/main/output/pdf)
 
 **HIPERION - Sistema** ([repositório](https://github.com/zztrevisan/PROTOCOLOS-SERVER))
 [Arquitetura](https://github.com/zztrevisan/PROTOCOLOS-SERVER/blob/main/docs/arquitetura/ARQUITETURA.md) ·
@@ -87,7 +88,8 @@ repositório raiz, cada pasta de produto é só uma referência de commit).
 [Fluxos operacionais](https://github.com/zztrevisan/PROTOCOLOS-SERVER/blob/main/docs/arquitetura/FLUXOS.md) ·
 [Segurança](https://github.com/zztrevisan/PROTOCOLOS-SERVER/blob/main/docs/operacao/SEGURANCA.md) ·
 [Glossário de domínio](https://github.com/zztrevisan/PROTOCOLOS-SERVER/blob/main/docs/CONTEXT.md) ·
-[Decisões de arquitetura](https://github.com/zztrevisan/PROTOCOLOS-SERVER/tree/main/docs/adr)
+[Decisões de arquitetura](https://github.com/zztrevisan/PROTOCOLOS-SERVER/tree/main/docs/adr) ·
+[PDFs de apresentação](https://github.com/zztrevisan/PROTOCOLOS-SERVER/tree/main/output/pdf)
 
 **Desta raiz**
 [Decisões de arquitetura](docs/adr/) ·
