@@ -6,6 +6,18 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev", "--prefix", "HIPERION - Site"],
       "port": 3000
+    },
+    {
+      "name": "sistema-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start:internal", "--prefix", "HIPERION - Sistema"],
+      "port": 3000
+    },
+    {
+      "name": "site-prod",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "HIPERION - Site", "run", "start", "--", "-p", "3002"],
+      "port": 3002
     }
   ]
 }
