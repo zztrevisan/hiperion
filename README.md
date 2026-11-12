@@ -72,7 +72,7 @@ não colidem. Veja `HIPERION - Site/.env.example` e
 ## Documentação
 
 Os links abaixo apontam para o repositório de cada submódulo (não dá para
-navegar para dentro deles a partir daqui — do ponto de vista deste
+navegar para dentro deles a partir daqui do ponto de vista deste
 repositório raiz, cada pasta de produto é só uma referência de commit).
 
 **HIPERION - Site** ([repositório](https://github.com/zztrevisan/hiperion-site))
