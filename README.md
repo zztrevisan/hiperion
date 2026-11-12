@@ -7,7 +7,7 @@
 
 Ponto de montagem dos dois produtos digitais da Hiperion Assessoria Contábil,
 escritório de contabilidade fundado em 1969 em São Paulo. Este repositório
-não tem código-fonte próprio — só reúne os dois no mesmo lugar para facilitar
+não tem código-fonte próprio, só reúne os dois no mesmo lugar para facilitar
 o trabalho do dia a dia.
 
 ## Produtos
